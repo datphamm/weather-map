@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./assets/css/input.css" />
+    <title>Document</title>
+  </head>
+  <body class="bg-[#222] font">
+    <div
+      class="w-[90%] max-w-118 bg-[linear-gradient(135deg,#00feba,#5b548a)] text-white mx-auto mt-25 mb-0 rounded-2xl text-center py-10 px-[35px]"
+    >
+      <div class="search flex items-center justify-between w-full">
+        <input id="myInput"
+          class="border-0 outline-0 flex-1 mr-4 text-base rounded-4xl h-15 py-2.5 px-6.25 text-gray-600 bg-[#ebfffc]"
+          type="text"
+          placeholder="Enter your city name"
+          spellcheck="false"
+        />
+        <button
+          class="border-0 outline-0 bg-[#ebfffc] rounded-full w-15 h-15 cursor-pointer"
+        >
+          <img class="w-4 ml-5" src="./assets/images/search.png" alt="" />
+        </button>
+      </div>
+      <div class="weather">
+        <img
+          class="weather-icon w-[170px] mt-7.5 mx-auto"
+          src="./assets/images/rain.png"
+          alt=""
+        />
+        <h1 class="temp text-[80px] font-medium">22°C</h1>
+        <h2 class="city text-[45px] font-normal -mt-2.5">New York</h2>
+        <div class="details flex justify-between items-center">
+          <div class="col">
+            <img src="./assets/images/humidity.png" alt="" />
+            <div>
+              <p class="humidity">50%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="./assets/images/wind.png" alt="" />
+            <div>
+              <p class="wind">15km/h</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
