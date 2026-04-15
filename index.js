@@ -18,9 +18,14 @@ const checkWeather = async (city) => {
   const res = await fetch(apiUrl + city + `&appid=${apiKey}`);
   const data = await res.json();
   console.log(data);
+  // hàm trim dùng để loại bỏ khoảng trắng
+  if (!city || city.trim() === "") {
+    alert("Vui lòng nhập tên thành phố!");
+    return; 
+  }
 
-  if(res.status === 404){
-    alert("Please enter the city name correctly");
+  if(res.status === 404 ){
+    alert("Vui lòng nhập chính xác tên thành phố");
   }
 
   document.querySelector(".city").innerHTML = data.name;
@@ -41,7 +46,7 @@ const checkWeather = async (city) => {
   }
   document.querySelector(".weather").style.display = "block";
 
-  
+  =
 };
 
 searchBtn.addEventListener("click", () => {
